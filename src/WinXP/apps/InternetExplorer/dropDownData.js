@@ -548,4 +548,7 @@ const Help = [
     text: "About Internet Explorer"
   }
 ];
+
+const dropDownData = { File, Edit, View, Favorites, Tools, Help };
+
 export default { File, Edit, View, Favorites, Tools, Help };
