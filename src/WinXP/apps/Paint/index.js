@@ -8,7 +8,7 @@ function Paint({ onClose, isFocus }) {
       style={{
         width: "100%",
         height: "100%",
-        position: "relative",
+        position: "relative"
       }}
     >
       <iframe
@@ -19,7 +19,7 @@ function Paint({ onClose, isFocus }) {
           display: "block",
           width: "100%",
           height: "100%",
-          backgroundColor: "rgb(192,192,192)",
+          backgroundColor: "rgb(192,192,192)"
         }}
       />
       {!isFocus && (
@@ -29,7 +29,7 @@ function Paint({ onClose, isFocus }) {
             height: "100%",
             position: "absolute",
             left: 0,
-            top: 0,
+            top: 0
           }}
         />
       )}

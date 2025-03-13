@@ -11,7 +11,7 @@ function Balloon({ startAfter = 3000, duration = 15000 }) {
     const fadeTimer = setTimeout(() => setShow(false), startAfter + duration);
     const closeTimer = setTimeout(
       () => setStart(false),
-      startAfter + duration + 1000,
+      startAfter + duration + 1000
     );
     return () => {
       clearTimeout(openTimer);

@@ -11,7 +11,7 @@ function Winamp({ onClose, onMinimize }) {
       return;
     }
     webamp.current = new Webamp({
-      initialTracks,
+      initialTracks
     });
     webamp.current.renderWhenReady(target).then(() => {
       target.appendChild(document.querySelector("#webamp"));

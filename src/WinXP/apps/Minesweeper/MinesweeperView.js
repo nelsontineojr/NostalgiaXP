@@ -43,7 +43,7 @@ const digits = [
   digit6,
   digit7,
   digit8,
-  digit9,
+  digit9
 ];
 function renderDigits(number) {
   let numberStr;
@@ -95,7 +95,7 @@ function MineSweeperView({
   onClose,
   difficulty,
   openingCeil,
-  openingCeils,
+  openingCeils
 }) {
   const face = useRef(null);
   const [mouseDownContent, setMouseDownContent] = useState(false);
@@ -103,9 +103,8 @@ function MineSweeperView({
   function remainMines() {
     return (
       mines -
-      ceils.filter(
-        (ceil) => ceil.state === "flag" || ceil.state === "misflagged",
-      ).length
+      ceils.filter(ceil => ceil.state === "flag" || ceil.state === "misflagged")
+        .length
     );
   }
   function statusFace() {
@@ -144,30 +143,30 @@ function MineSweeperView({
   function onMouseDownCeils(e) {
     const index = Array.prototype.indexOf.call(
       e.currentTarget.children,
-      e.target.closest(".mine__ceil"),
+      e.target.closest(".mine__ceil")
     );
     if (e.button === 2 && e.buttons === 2 && index !== -1) {
       changeCeilState(index);
     } else if (e.button === 0 && e.buttons === 1) {
       setOpenBehavior({
         index,
-        behavior: "single",
+        behavior: "single"
       });
     } else if (e.buttons === 3) {
       setOpenBehavior({
         index,
-        behavior: "multi",
+        behavior: "multi"
       });
     }
   }
   function onMouseOverCeils(e) {
     const index = Array.prototype.indexOf.call(
       e.currentTarget.children,
-      e.target.closest(".mine__ceil"),
+      e.target.closest(".mine__ceil")
     );
     setOpenBehavior({
       index,
-      behavior: openBehavior.behavior,
+      behavior: openBehavior.behavior
     });
   }
   function onMouseUpCeils() {
@@ -212,7 +211,7 @@ function MineSweeperView({
     };
   }, []);
   return (
-    <div className={className} onContextMenu={(e) => e.preventDefault()}>
+    <div className={className} onContextMenu={e => e.preventDefault()}>
       <div className="mine__options">
         <WindowDropDowns
           items={genDropDownData(difficulty)}

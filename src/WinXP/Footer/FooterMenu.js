@@ -61,7 +61,7 @@ function FooterMenu({ className, onClick }) {
               { icon: winamp, text: "Winamp" },
               { icon: paint, text: "Paint" },
               { icon: mediaPlayer, text: "Windows Media Player" },
-              { icon: messenger, text: "Windows Messenger" },
+              { icon: messenger, text: "Windows Messenger" }
             ]}
           />
           <div style={{ flex: 1 }} />
@@ -71,7 +71,7 @@ function FooterMenu({ className, onClick }) {
               hovering === "All Programs"
                 ? {
                     backgroundColor: "#2f71cd",
-                    color: "#FFF",
+                    color: "#FFF"
                   }
                 : {}
             }
@@ -83,7 +83,7 @@ function FooterMenu({ className, onClick }) {
                   alt=""
                   style={{
                     marginLeft: "5px",
-                    height: "18px",
+                    height: "18px"
                   }}
                 />
               </div>
@@ -102,7 +102,7 @@ function FooterMenu({ className, onClick }) {
               hovering === "My Recent Documents"
                 ? {
                     backgroundColor: "#2f71cd",
-                    color: "#FFF",
+                    color: "#FFF"
                   }
                 : {}
             }
@@ -112,7 +112,7 @@ function FooterMenu({ className, onClick }) {
             <div
               style={{
                 borderLeftColor:
-                  hovering === "My Recent Documents" ? "#FFF" : "#00136b",
+                  hovering === "My Recent Documents" ? "#FFF" : "#00136b"
               }}
               className="menu__arrow"
             />
@@ -129,7 +129,7 @@ function FooterMenu({ className, onClick }) {
             items={[
               { icon: pictures, text: "My Pictures" },
               { icon: music, text: "My Music" },
-              { icon: computer, text: "My Computer" },
+              { icon: computer, text: "My Computer" }
             ]}
           />
           <div className="menu__separator" />
@@ -137,7 +137,7 @@ function FooterMenu({ className, onClick }) {
             onClick={onClick}
             items={[
               { icon: controlPanel, text: "Control Panel" },
-              { icon: setAccess, text: "Set Program Access and Defaults" },
+              { icon: setAccess, text: "Set Program Access and Defaults" }
             ]}
           />
           <Item
@@ -145,7 +145,7 @@ function FooterMenu({ className, onClick }) {
               hovering === "Connect To"
                 ? {
                     backgroundColor: "#2f71cd",
-                    color: "#FFF",
+                    color: "#FFF"
                   }
                 : {}
             }
@@ -154,7 +154,7 @@ function FooterMenu({ className, onClick }) {
           >
             <div
               style={{
-                borderLeftColor: hovering === "Connect To" ? "#FFF" : "#00136b",
+                borderLeftColor: hovering === "Connect To" ? "#FFF" : "#00136b"
               }}
               className="menu__arrow"
             />
@@ -169,7 +169,7 @@ function FooterMenu({ className, onClick }) {
             items={[
               { icon: help, text: "Help and Support" },
               { icon: search, text: "Search" },
-              { icon: run, text: "Run..." },
+              { icon: run, text: "Run..." }
             ]}
           />
         </div>
@@ -199,7 +199,7 @@ function Item({
   icon,
   onHover = () => {},
   onClick = () => {},
-  children,
+  children
 }) {
   function _onClick() {
     onClick(text);

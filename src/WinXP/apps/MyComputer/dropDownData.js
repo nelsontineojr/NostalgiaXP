@@ -2,89 +2,89 @@ export const File = [
   {
     type: "item",
     text: "Create Shortcut",
-    disable: true,
+    disable: true
   },
   {
     type: "item",
     text: "Delete",
-    disable: true,
+    disable: true
   },
   {
     type: "item",
     text: "Rename",
-    disable: true,
+    disable: true
   },
   {
     type: "item",
     disable: true,
-    text: "Properties",
+    text: "Properties"
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
-    text: "Close",
-  },
+    text: "Close"
+  }
 ];
 const Edit = [
   {
     type: "item",
     disable: true,
     text: "Undo",
-    hotkey: "Ctrl+Z",
+    hotkey: "Ctrl+Z"
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
     disable: true,
     text: "Cut",
-    hotkey: "Ctrl+X",
+    hotkey: "Ctrl+X"
   },
   {
     type: "item",
     disable: true,
     text: "Copy",
-    hotkey: "Ctrl+C",
+    hotkey: "Ctrl+C"
   },
   {
     type: "item",
     disable: true,
     text: "Paste",
-    hotkey: "Ctrl+V",
+    hotkey: "Ctrl+V"
   },
   {
     type: "item",
     disable: true,
-    text: "Paste Shortcut",
+    text: "Paste Shortcut"
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
     text: "Copy To Folder...",
-    disable: true,
+    disable: true
   },
   {
     type: "item",
     text: "Move To Folder...",
-    disable: true,
+    disable: true
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
     text: "Select All",
-    hotkey: "Ctrl+A",
+    hotkey: "Ctrl+A"
   },
   {
     type: "item",
-    text: "Invert Selection",
-  },
+    text: "Invert Selection"
+  }
 ];
 
 const View = [
@@ -92,166 +92,166 @@ const View = [
     type: "menu",
     position: {
       left: "calc(100% - 4px)",
-      top: "-3px",
+      top: "-3px"
     },
     text: "Toolbars",
     items: [
       {
         type: "item",
         symbol: "check",
-        text: "Standard Buttons",
+        text: "Standard Buttons"
       },
       {
         type: "item",
         symbol: "check",
-        text: "Address Bar",
+        text: "Address Bar"
       },
       {
         type: "item",
         symbol: "check",
-        text: "Links",
+        text: "Links"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         type: "item",
         symbol: "check",
-        text: "Lock the Toolbars",
+        text: "Lock the Toolbars"
       },
       {
         type: "item",
-        text: "Customize...",
-      },
-    ],
+        text: "Customize..."
+      }
+    ]
   },
   {
     type: "item",
     symbol: "check",
-    text: "Status Bar",
+    text: "Status Bar"
   },
   {
     type: "menu",
     position: {
       left: "calc(100% - 4px)",
-      top: "-3px",
+      top: "-3px"
     },
     text: "Explorer Bar",
     items: [
       {
         type: "item",
         text: "Search",
-        hotkey: "Ctrl+E",
+        hotkey: "Ctrl+E"
       },
       {
         type: "item",
         text: "Favorites",
-        hotkey: "Ctrl+I",
+        hotkey: "Ctrl+I"
       },
       {
         type: "item",
         text: "History",
-        hotkey: "Ctrl+H",
+        hotkey: "Ctrl+H"
       },
       {
         type: "item",
-        text: "Folders",
+        text: "Folders"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         type: "item",
-        text: "Tip of the Day",
-      },
-    ],
+        text: "Tip of the Day"
+      }
+    ]
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
-    text: "Thumbnails",
+    text: "Thumbnails"
   },
   {
     type: "item",
     text: "Tiles",
-    symbol: "circle",
+    symbol: "circle"
   },
   {
     type: "item",
-    text: "Icons",
+    text: "Icons"
   },
   {
     type: "item",
-    text: "List",
+    text: "List"
   },
   {
     type: "item",
-    text: "Details",
+    text: "Details"
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "menu",
     position: {
       left: "calc(100% - 4px)",
-      top: "-3px",
+      top: "-3px"
     },
     text: "Arrange Icons by",
     items: [
       {
         type: "item",
-        text: "Name",
+        text: "Name"
       },
       {
         type: "item",
         text: "Type",
-        symbol: "circle",
+        symbol: "circle"
       },
       {
         type: "item",
-        text: "Total Size",
+        text: "Total Size"
       },
       {
         type: "item",
-        text: "Free Space",
+        text: "Free Space"
       },
       {
         type: "item",
-        text: "Comments",
+        text: "Comments"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         type: "item",
         text: "Show in Groups",
-        symbol: "check",
+        symbol: "check"
       },
       {
         type: "item",
-        text: "Auto Arrange",
+        text: "Auto Arrange"
       },
       {
         type: "item",
-        text: "Align to Grid",
-      },
-    ],
+        text: "Align to Grid"
+      }
+    ]
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
-    text: "Choose Details...",
+    text: "Choose Details..."
   },
   {
     type: "menu",
     position: {
       left: "calc(100% - 4px)",
-      top: "-3px",
+      top: "-3px"
     },
     text: "Go to",
     items: [
@@ -259,136 +259,136 @@ const View = [
         type: "item",
         disable: true,
         text: "Back",
-        hotkey: "Alt+Left Arrow",
+        hotkey: "Alt+Left Arrow"
       },
       {
         type: "item",
         disable: true,
         text: "Forward",
-        hotkey: "Alt+Right Arrow",
+        hotkey: "Alt+Right Arrow"
       },
       {
         type: "item",
-        text: "Up One Level",
+        text: "Up One Level"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         type: "item",
         text: "Home Page",
-        hotkey: "Alt+Home",
+        hotkey: "Alt+Home"
       },
       {
-        type: "separator",
+        type: "separator"
       },
       {
         type: "item",
         text: "My Computer",
-        symbol: "check",
-      },
-    ],
+        symbol: "check"
+      }
+    ]
   },
   {
     type: "item",
-    text: "Refresh",
-  },
+    text: "Refresh"
+  }
 ];
 const Favorites = [
   {
     type: "item",
-    text: "Add to Favorites...",
+    text: "Add to Favorites..."
   },
   {
     type: "item",
-    text: "Organize Favorites...",
+    text: "Organize Favorites..."
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "menu",
     symbol: "folder",
     position: {
       left: "calc(100% - 4px)",
-      top: "-3px",
+      top: "-3px"
     },
     text: "Links",
     items: [
       {
         type: "item",
         text: "Customize Links",
-        symbol: "ie-paper",
+        symbol: "ie-paper"
       },
       {
         type: "item",
         text: "Free Hotmail",
-        symbol: "ie-paper",
+        symbol: "ie-paper"
       },
       {
         type: "item",
         text: "Windows",
-        symbol: "ie-paper",
+        symbol: "ie-paper"
       },
       {
         type: "item",
         text: "Windows Marketplace",
-        symbol: "ie-book",
+        symbol: "ie-book"
       },
       {
         type: "item",
         text: "Windows Media",
-        symbol: "ie-paper",
-      },
-    ],
+        symbol: "ie-paper"
+      }
+    ]
   },
   {
     type: "item",
     text: "MSN.com",
-    symbol: "ie-paper",
+    symbol: "ie-paper"
   },
   {
     type: "item",
     text: "Radio Station Guide",
-    symbol: "ie-paper",
-  },
+    symbol: "ie-paper"
+  }
 ];
 const Tools = [
   {
     type: "item",
-    text: "Map Network Drive...",
+    text: "Map Network Drive..."
   },
   {
     type: "item",
-    text: "Disconnect Network Drive...",
+    text: "Disconnect Network Drive..."
   },
   {
     type: "item",
-    text: "Synchronize...",
+    text: "Synchronize..."
   },
   {
-    type: "separator",
+    type: "separator"
   },
   {
     type: "item",
-    text: "Folder Options...",
-  },
+    text: "Folder Options..."
+  }
 ];
 const Help = [
   {
     type: "item",
-    text: "Help and Support Center",
+    text: "Help and Support Center"
   },
   {
-    type: "separator",
-  },
-  {
-    type: "item",
-    text: "Is this copy of Windows legal?",
+    type: "separator"
   },
   {
     type: "item",
-    text: "About Windows",
+    text: "Is this copy of Windows legal?"
   },
+  {
+    type: "item",
+    text: "About Windows"
+  }
 ];
 export default { File, Edit, View, Favorites, Tools, Help };

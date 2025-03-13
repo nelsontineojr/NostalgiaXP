@@ -31,13 +31,13 @@ function Footer({
   apps,
   focusedAppId,
   onMouseDown,
-  onClickMenuItem,
+  onClickMenuItem
 }) {
   const [time, setTime] = useState(getTime);
   const [menuOn, setMenuOn] = useState(false);
   const menu = useRef(null);
   function toggleMenu() {
-    setMenuOn((on) => !on);
+    setMenuOn(on => !on);
   }
   function _onMouseDown(e) {
     if (e.target.closest(".footer__window")) return;
@@ -77,7 +77,7 @@ function Footer({
           onMouseDown={toggleMenu}
         />
         {[...apps].map(
-          (app) =>
+          app =>
             !app.header.noFooterWindow && (
               <FooterWindow
                 key={app.id}
@@ -87,7 +87,7 @@ function Footer({
                 onMouseDown={onMouseDownApp}
                 isFocus={focusedAppId === app.id}
               />
-            ),
+            )
         )}
       </div>
 
@@ -205,8 +205,7 @@ const Container = styled.footer`
     height: 22px;
     font-size: 11px;
     background-color: #3c81f3;
-    box-shadow:
-      inset -1px 0px rgba(0, 0, 0, 0.3),
+    box-shadow: inset -1px 0px rgba(0, 0, 0, 0.3),
       inset 1px 1px 1px rgba(255, 255, 255, 0.2);
     position: relative;
     display: flex;
@@ -226,8 +225,7 @@ const Container = styled.footer`
   }
   .footer__window.cover:hover {
     background-color: #53a3ff;
-    box-shadow:
-      inset -1px 0px rgba(0, 0, 0, 0.3),
+    box-shadow: inset -1px 0px rgba(0, 0, 0, 0.3),
       inset 1px 1px 1px rgba(255, 255, 255, 0.2);
   }
   .footer__window.cover:before {
@@ -243,8 +241,7 @@ const Container = styled.footer`
   }
   .footer__window.cover:hover:active {
     background-color: #1e52b7;
-    box-shadow:
-      inset 0 0 1px 1px rgba(0, 0, 0, 0.3),
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.3),
       inset 1px 0 1px rgba(0, 0, 0, 0.7);
   }
   .footer__window.focus:hover {
@@ -255,8 +252,7 @@ const Container = styled.footer`
   }
   .footer__window.focus {
     background-color: #1e52b7;
-    box-shadow:
-      inset 0 0 1px 1px rgba(0, 0, 0, 0.2),
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.2),
       inset 1px 0 1px rgba(0, 0, 0, 0.7);
   }
   .footer__time {

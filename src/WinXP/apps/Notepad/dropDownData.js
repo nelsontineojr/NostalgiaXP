@@ -2,137 +2,137 @@ const File = [
   {
     type: "item",
     disable: true,
-    text: "New",
+    text: "New"
   },
   {
     type: "item",
     disable: true,
-    text: "Open...",
+    text: "Open..."
   },
   {
     type: "item",
     disable: true,
-    text: "Save",
+    text: "Save"
   },
   {
     type: "item",
     disable: true,
-    text: "Save As...",
+    text: "Save As..."
   },
   {
-    type: "separator",
-  },
-  {
-    type: "item",
-    disable: true,
-    text: "Page Setup...",
+    type: "separator"
   },
   {
     type: "item",
     disable: true,
-    text: "Print...",
-  },
-  {
-    type: "separator",
+    text: "Page Setup..."
   },
   {
     type: "item",
-    text: "Exit",
+    disable: true,
+    text: "Print..."
   },
+  {
+    type: "separator"
+  },
+  {
+    type: "item",
+    text: "Exit"
+  }
 ];
 const Edit = [
   {
     type: "item",
     disable: true,
-    text: "Undo...",
+    text: "Undo..."
   },
   {
-    type: "separator",
-  },
-  {
-    type: "item",
-    disable: true,
-    text: "Cut",
+    type: "separator"
   },
   {
     type: "item",
     disable: true,
-    text: "Copy",
+    text: "Cut"
   },
   {
     type: "item",
     disable: true,
-    text: "Paste",
+    text: "Copy"
   },
   {
     type: "item",
     disable: true,
-    text: "Delete",
-  },
-  {
-    type: "separator",
+    text: "Paste"
   },
   {
     type: "item",
     disable: true,
-    text: "Find...",
+    text: "Delete"
+  },
+  {
+    type: "separator"
   },
   {
     type: "item",
     disable: true,
-    text: "Find Next",
+    text: "Find..."
   },
   {
     type: "item",
     disable: true,
-    text: "Replace...",
+    text: "Find Next"
   },
   {
     type: "item",
     disable: true,
-    text: "Go To...",
-  },
-  {
-    type: "separator",
+    text: "Replace..."
   },
   {
     type: "item",
     disable: true,
-    text: "Select All",
+    text: "Go To..."
+  },
+  {
+    type: "separator"
   },
   {
     type: "item",
-    text: "Time/Date",
+    disable: true,
+    text: "Select All"
   },
+  {
+    type: "item",
+    text: "Time/Date"
+  }
 ];
 const Format = [
   {
     type: "item",
-    text: "Word Wrap",
+    text: "Word Wrap"
   },
   {
     type: "item",
     disable: true,
-    text: "Font...",
-  },
+    text: "Font..."
+  }
 ];
 const View = [
   {
     type: "item",
     disable: true,
-    text: "Status Bar",
-  },
+    text: "Status Bar"
+  }
 ];
 const Help = [
   {
     type: "item",
     disable: true,
-    text: "Help Topics",
+    text: "Help Topics"
   },
   {
     type: "item",
     disable: true,
-    text: "About Notepad",
-  },
+    text: "About Notepad"
+  }
 ];
 export default { File, Edit, Format, View, Help };

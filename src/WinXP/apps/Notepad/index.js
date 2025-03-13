@@ -19,7 +19,7 @@ export default function Notepad({ onClose }) {
       case "Time/Date":
         const date = new Date();
         setDocText(
-          `${docText}${date.toLocaleTimeString()} ${date.toLocaleDateString()}`,
+          `${docText}${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
         );
         break;
       default:
@@ -51,7 +51,7 @@ export default function Notepad({ onClose }) {
       <StyledTextarea
         wordWrap={wordWrap}
         value={docText}
-        onChange={(e) => setDocText(e.target.value)}
+        onChange={e => setDocText(e.target.value)}
         onKeyDown={onTextAreaKeyDown}
         spellCheck={false}
       />
@@ -81,8 +81,7 @@ const StyledTextarea = styled.textarea`
   line-height: 14px;
   resize: none;
   padding: 2px;
-  ${(props) =>
-    props.wordWrap ? "" : "white-space: nowrap; overflow-x: scroll;"}
+  ${props => (props.wordWrap ? "" : "white-space: nowrap; overflow-x: scroll;")}
   overflow-y: scroll;
   border: 1px solid #96abff;
 `;

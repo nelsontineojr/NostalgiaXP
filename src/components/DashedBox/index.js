@@ -6,7 +6,7 @@ function DashedBox({ mouse, startPos }) {
       x: Math.min(startPos.x, mouse.docX),
       y: Math.min(startPos.y, mouse.docY),
       w: Math.abs(startPos.x - mouse.docX),
-      h: Math.abs(startPos.y - mouse.docY),
+      h: Math.abs(startPos.y - mouse.docY)
     };
   }
   if (startPos) {
@@ -18,7 +18,7 @@ function DashedBox({ mouse, startPos }) {
           width: w,
           height: h,
           position: "absolute",
-          border: `1px dotted gray`,
+          border: `1px dotted gray`
         }}
       />
     );

@@ -11,11 +11,11 @@ function Windows({
   onClose,
   onMinimize,
   onMaximize,
-  focusedAppId,
+  focusedAppId
 }) {
   return (
     <div style={{ position: "relative", zIndex: 0 }}>
-      {apps.map((app) => (
+      {apps.map(app => (
         <StyledWindow
           show={!app.minimized}
           key={app.id}
@@ -32,7 +32,7 @@ function Windows({
   );
 }
 
-const Window = memo(function ({
+const Window = memo(function({
   injectProps,
   id,
   onMouseDown,
@@ -47,7 +47,7 @@ const Window = memo(function ({
   component,
   zIndex,
   isFocus,
-  className,
+  className
 }) {
   function _onMouseDown() {
     onMouseDown(id);
@@ -76,10 +76,10 @@ const Window = memo(function ({
       top: 1,
       right: windowWidth - 1,
       bottom: windowHeight - 31,
-      left: 1,
+      left: 1
     },
     resizable,
-    resizeThreshold: 10,
+    resizeThreshold: 10
   });
   let width, height, x, y;
   if (maximized) {
@@ -102,7 +102,7 @@ const Window = memo(function ({
         transform: `translate(${x}px,${y}px)`,
         width: width ? `${width}px` : "auto",
         height: height ? `${height}px` : "auto",
-        zIndex,
+        zIndex
       }}
     >
       <div className="header__bg" />
@@ -134,7 +134,7 @@ const Window = memo(function ({
           onClose: _onMouseUpClose,
           onMinimize: _onMouseUpMinimize,
           isFocus,
-          ...injectProps,
+          ...injectProps
         })}
       </div>
     </div>
