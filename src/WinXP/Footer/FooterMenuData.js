@@ -59,39 +59,39 @@ export const MyRecentDocuments = [
   {
     type: "item",
     icon: empty,
-    text: "(Empty)"
-  }
+    text: "(Empty)",
+  },
 ];
 export const ConnectTo = [
   {
     type: "item",
     icon: MSN,
-    text: "MSN"
+    text: "MSN",
   },
   {
     type: "item",
     icon: connection,
-    text: "Show all connections"
+    text: "Show all connections",
   },
 ];
 export const AllPrograms = [
   {
     type: "item",
     icon: access,
-    text: "Set Program Access and Defaults"
+    text: "Set Program Access and Defaults",
   },
   {
     type: "item",
     icon: catalog,
-    text: "Windows Catalog"
+    text: "Windows Catalog",
   },
   {
     type: "item",
     icon: update,
-    text: "Windows Update"
+    text: "Windows Update",
   },
   {
-    type: "separator"
+    type: "separator",
   },
   {
     type: "menu",
@@ -107,29 +107,29 @@ export const AllPrograms = [
           {
             type: "item",
             icon: accessibility,
-            text: "Accessibility Wizard"
+            text: "Accessibility Wizard",
           },
           {
             type: "item",
             icon: magnifier,
-            text: "Magnifier"
+            text: "Magnifier",
           },
           {
             type: "item",
             icon: narrator,
-            text: "Narrator"
+            text: "Narrator",
           },
           {
             type: "item",
             icon: keyboard,
-            text: "On-Screen Keyboard"
+            text: "On-Screen Keyboard",
           },
           {
             type: "item",
             icon: utility,
-            text: "Utility Manager"
-          }
-        ]
+            text: "Utility Manager",
+          },
+        ],
       },
       {
         type: "menu",
@@ -140,12 +140,12 @@ export const AllPrograms = [
           {
             type: "item",
             icon: hyperCmd,
-            text: "HyperTerminal"
+            text: "HyperTerminal",
           },
           {
             type: "item",
             icon: networkConnection,
-            text: "Network Connections"
+            text: "Network Connections",
           },
           {
             type: "item",

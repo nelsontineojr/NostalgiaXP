@@ -1,27 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect, useRef } from "react";
+import styled from "styled-components";
 
-import FooterMenu from './FooterMenu';
-import Balloon from 'components/Balloon';
-import startButton from 'assets/windowsIcons/start.png';
-import sound from 'assets/windowsIcons/690(16x16).png';
-import usb from 'assets/windowsIcons/394(16x16).png';
-import risk from 'assets/windowsIcons/229(16x16).png';
+import FooterMenu from "./FooterMenu";
+import Balloon from "components/Balloon";
+import startButton from "assets/windowsIcons/start.png";
+import sound from "assets/windowsIcons/690(16x16).png";
+import usb from "assets/windowsIcons/394(16x16).png";
+import risk from "assets/windowsIcons/229(16x16).png";
 
 const getTime = () => {
   const date = new Date();
   let hour = date.getHours();
-  let hourPostFix = 'AM';
+  let hourPostFix = "AM";
   let min = date.getMinutes();
   if (hour >= 12) {
     hour -= 12;
-    hourPostFix = 'PM';
+    hourPostFix = "PM";
   }
   if (hour === 0) {
     hour = 12;
   }
   if (min < 10) {
-    min = '0' + min;
+    min = "0" + min;
   }
   return `${hour}:${min} ${hourPostFix}`;
 };
@@ -37,10 +37,10 @@ function Footer({
   const [menuOn, setMenuOn] = useState(false);
   const menu = useRef(null);
   function toggleMenu() {
-    setMenuOn(on => !on);
+    setMenuOn((on) => !on);
   }
   function _onMouseDown(e) {
-    if (e.target.closest('.footer__window')) return;
+    if (e.target.closest(".footer__window")) return;
     onMouseDown();
   }
   function _onClickMenuItem(name) {
@@ -60,8 +60,8 @@ function Footer({
     function onMouseDown(e) {
       if (!target.contains(e.target) && menuOn) setMenuOn(false);
     }
-    window.addEventListener('mousedown', onMouseDown);
-    return () => window.removeEventListener('mousedown', onMouseDown);
+    window.addEventListener("mousedown", onMouseDown);
+    return () => window.removeEventListener("mousedown", onMouseDown);
   }, [menuOn]);
 
   return (
@@ -77,7 +77,7 @@ function Footer({
           onMouseDown={toggleMenu}
         />
         {[...apps].map(
-          app =>
+          (app) =>
             !app.header.noFooterWindow && (
               <FooterWindow
                 key={app.id}
@@ -95,7 +95,7 @@ function Footer({
         <img className="footer__icon" src={sound} alt="" />
         <img className="footer__icon" src={usb} alt="" />
         <img className="footer__icon" src={risk} alt="" />
-        <div style={{ position: 'relative', width: 0, height: 0 }}>
+        <div style={{ position: "relative", width: 0, height: 0 }}>
           <Balloon />
         </div>
         <div className="footer__time">{time}</div>
@@ -111,7 +111,7 @@ function FooterWindow({ id, icon, title, onMouseDown, isFocus }) {
   return (
     <div
       onMouseDown={_onMouseDown}
-      className={`footer__window ${isFocus ? 'focus' : 'cover'}`}
+      className={`footer__window ${isFocus ? "focus" : "cover"}`}
     >
       <img className="footer__icon" src={icon} alt={title} />
       <div className="footer__text">{title}</div>
@@ -205,7 +205,8 @@ const Container = styled.footer`
     height: 22px;
     font-size: 11px;
     background-color: #3c81f3;
-    box-shadow: inset -1px 0px rgba(0, 0, 0, 0.3),
+    box-shadow:
+      inset -1px 0px rgba(0, 0, 0, 0.3),
       inset 1px 1px 1px rgba(255, 255, 255, 0.2);
     position: relative;
     display: flex;
@@ -225,12 +226,13 @@ const Container = styled.footer`
   }
   .footer__window.cover:hover {
     background-color: #53a3ff;
-    box-shadow: inset -1px 0px rgba(0, 0, 0, 0.3),
+    box-shadow:
+      inset -1px 0px rgba(0, 0, 0, 0.3),
       inset 1px 1px 1px rgba(255, 255, 255, 0.2);
   }
   .footer__window.cover:before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     left: -2px;
     top: -2px;
@@ -241,7 +243,8 @@ const Container = styled.footer`
   }
   .footer__window.cover:hover:active {
     background-color: #1e52b7;
-    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.3),
+    box-shadow:
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.3),
       inset 1px 0 1px rgba(0, 0, 0, 0.7);
   }
   .footer__window.focus:hover {
@@ -252,7 +255,8 @@ const Container = styled.footer`
   }
   .footer__window.focus {
     background-color: #1e52b7;
-    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.2),
+    box-shadow:
+      inset 0 0 1px 1px rgba(0, 0, 0, 0.2),
       inset 1px 0 1px rgba(0, 0, 0, 0.7);
   }
   .footer__time {

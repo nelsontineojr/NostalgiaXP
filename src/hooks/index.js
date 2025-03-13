@@ -1,1 +1,1 @@
-export { default as useElementResize } from './useElementResize';
+export { default as useElementResize } from "./useElementResize";

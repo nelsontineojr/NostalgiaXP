@@ -1,53 +1,53 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
-import { WindowDropDowns, Google } from 'components';
-import dropDownData from './dropDownData';
-import ie from 'assets/windowsIcons/ie-paper.png';
-import printer from 'assets/windowsIcons/17(32x32).png';
-import go from 'assets/windowsIcons/290.png';
-import links from 'assets/windowsIcons/links.png';
-import search from 'assets/windowsIcons/299(32x32).png';
-import favorite from 'assets/windowsIcons/744(32x32).png';
-import back from 'assets/windowsIcons/back.png';
-import earth from 'assets/windowsIcons/earth.png';
-import edit from 'assets/windowsIcons/edit.png';
-import forward from 'assets/windowsIcons/forward.png';
-import history from 'assets/windowsIcons/history.png';
-import home from 'assets/windowsIcons/home.png';
-import mail from 'assets/windowsIcons/mail.png';
-import msn from 'assets/windowsIcons/msn.png';
-import refresh from 'assets/windowsIcons/refresh.png';
-import stop from 'assets/windowsIcons/stop.png';
-import windows from 'assets/windowsIcons/windows.png';
-import dropdown from 'assets/windowsIcons/dropdown.png';
+import { WindowDropDowns, Google } from "components";
+import dropDownData from "./dropDownData";
+import ie from "assets/windowsIcons/ie-paper.png";
+import printer from "assets/windowsIcons/17(32x32).png";
+import go from "assets/windowsIcons/290.png";
+import links from "assets/windowsIcons/links.png";
+import search from "assets/windowsIcons/299(32x32).png";
+import favorite from "assets/windowsIcons/744(32x32).png";
+import back from "assets/windowsIcons/back.png";
+import earth from "assets/windowsIcons/earth.png";
+import edit from "assets/windowsIcons/edit.png";
+import forward from "assets/windowsIcons/forward.png";
+import history from "assets/windowsIcons/history.png";
+import home from "assets/windowsIcons/home.png";
+import mail from "assets/windowsIcons/mail.png";
+import msn from "assets/windowsIcons/msn.png";
+import refresh from "assets/windowsIcons/refresh.png";
+import stop from "assets/windowsIcons/stop.png";
+import windows from "assets/windowsIcons/windows.png";
+import dropdown from "assets/windowsIcons/dropdown.png";
 
 function InternetExplorer({ onClose }) {
   const [state, setState] = useState({
-    route: 'main',
-    query: '',
+    route: "main",
+    query: "",
   });
   function onSearch(str) {
     if (str.length) {
       setState({
-        route: 'search',
+        route: "search",
         query: str,
       });
     }
   }
   function goMain() {
     setState({
-      route: 'main',
-      query: '',
+      route: "main",
+      query: "",
     });
   }
   function onClickOptionItem(item) {
     switch (item) {
-      case 'Close':
+      case "Close":
         onClose();
         break;
-      case 'Home Page':
-      case 'Back':
+      case "Home Page":
+      case "Back":
         goMain();
         break;
       default:
@@ -69,7 +69,7 @@ function InternetExplorer({ onClose }) {
         <div
           onClick={goMain}
           className={`ie__function_bar__button${
-            state.route === 'main' ? '--disable' : ''
+            state.route === "main" ? "--disable" : ""
           }`}
         >
           <img className="ie__function_bar__icon" src={back} alt="" />
@@ -138,9 +138,9 @@ function InternetExplorer({ onClose }) {
           <img src={ie} alt="ie" className="ie__address_bar__content__img" />
           <div className="ie__address_bar__content__text">
             {`https://www.google.com.tw${
-              state.route === 'search'
+              state.route === "search"
                 ? `/search?q=${encodeURIComponent(state.query)}`
-                : ''
+                : ""
             }`}
           </div>
           <img
@@ -292,7 +292,7 @@ const Div = styled.div`
     align-items: center;
     margin: 0 4px;
     &:before {
-      content: '';
+      content: "";
       display: block;
       border-width: 3px 3px 0;
       border-color: #000 transparent;
@@ -305,7 +305,7 @@ const Div = styled.div`
     align-items: center;
     margin: 0 1px 0 -1px;
     &:before {
-      content: '';
+      content: "";
       display: block;
       border-width: 3px 3px 0;
       border-color: #000 transparent;
@@ -458,11 +458,17 @@ const Div = styled.div`
       bottom: -1px;
       width: 2px;
       height: 2px;
-      box-shadow: 2px 0px rgba(0, 0, 0, 0.25), 5.5px 0px rgba(0, 0, 0, 0.25),
-        9px 0px rgba(0, 0, 0, 0.25), 5.5px -3.5px rgba(0, 0, 0, 0.25),
-        9px -3.5px rgba(0, 0, 0, 0.25), 9px -7px rgba(0, 0, 0, 0.25),
-        3px 1px rgba(255, 255, 255, 1), 6.5px 1px rgba(255, 255, 255, 1),
-        10px 1px rgba(255, 255, 255, 1), 10px -2.5px rgba(255, 255, 255, 1),
+      box-shadow:
+        2px 0px rgba(0, 0, 0, 0.25),
+        5.5px 0px rgba(0, 0, 0, 0.25),
+        9px 0px rgba(0, 0, 0, 0.25),
+        5.5px -3.5px rgba(0, 0, 0, 0.25),
+        9px -3.5px rgba(0, 0, 0, 0.25),
+        9px -7px rgba(0, 0, 0, 0.25),
+        3px 1px rgba(255, 255, 255, 1),
+        6.5px 1px rgba(255, 255, 255, 1),
+        10px 1px rgba(255, 255, 255, 1),
+        10px -2.5px rgba(255, 255, 255, 1),
         10px -6px rgba(255, 255, 255, 1);
     }
   }

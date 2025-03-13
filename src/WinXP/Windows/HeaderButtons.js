@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 function HeaderButtons({
   buttons,
@@ -22,8 +22,8 @@ function HeaderButtons({
       <button
         key="maximize"
         className={`header__button ${
-          maximized ? 'header__button--maximized' : 'header__button--maximize'
-        } ${resizable ? '' : 'header__button--disable'}`}
+          maximized ? "header__button--maximized" : "header__button--maximize"
+        } ${resizable ? "" : "header__button--disable"}`}
         onMouseUp={onMaximize}
       />
     ),
@@ -39,7 +39,7 @@ function HeaderButtons({
   return (
     <div className={className}>
       {buttons ? (
-        buttons.map(b => buttonElements[b])
+        buttons.map((b) => buttonElements[b])
       ) : (
         <>
           {buttonElements.minimize}
@@ -83,7 +83,7 @@ export default styled(HeaderButtons)`
       white 100%
     );
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 4px;
       top: 13px;
@@ -103,12 +103,14 @@ export default styled(HeaderButtons)`
       white 100%
     );
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       left: 4px;
       top: 4px;
-      box-shadow: inset 0 3px white, inset 0 0 0 1px white;
+      box-shadow:
+        inset 0 3px white,
+        inset 0 0 0 1px white;
       height: 12px;
       width: 12px;
     }
@@ -124,22 +126,27 @@ export default styled(HeaderButtons)`
       white 100%
     );
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       left: 7px;
       top: 4px;
-      box-shadow: inset 0 2px white, inset 0 0 0 1px white;
+      box-shadow:
+        inset 0 2px white,
+        inset 0 0 0 1px white;
       height: 8px;
       width: 8px;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       left: 4px;
       top: 7px;
-      box-shadow: inset 0 2px white, inset 0 0 0 1px white, 1px -1px #136dff;
+      box-shadow:
+        inset 0 2px white,
+        inset 0 0 0 1px white,
+        1px -1px #136dff;
       height: 8px;
       width: 8px;
       background-color: #136dff;
@@ -156,7 +163,7 @@ export default styled(HeaderButtons)`
       white 100%
     );
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 9px;
       top: 2px;
@@ -166,7 +173,7 @@ export default styled(HeaderButtons)`
       background-color: white;
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 9px;
       top: 2px;

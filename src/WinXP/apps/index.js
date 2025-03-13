@@ -1,21 +1,21 @@
-import InternetExplorer from './InternetExplorer';
-import Minesweeper from './Minesweeper';
-import ErrorBox from './ErrorBox';
-import MyComputer from './MyComputer';
-import Notepad from './Notepad';
-import Winamp from './Winamp';
-import Paint from './Paint';
-import iePaper from 'assets/windowsIcons/ie-paper.png';
-import ie from 'assets/windowsIcons/ie.png';
-import mine from 'assets/minesweeper/mine-icon.png';
-import error from 'assets/windowsIcons/897(16x16).png';
-import computer from 'assets/windowsIcons/676(16x16).png';
-import computerLarge from 'assets/windowsIcons/676(32x32).png';
-import notepad from 'assets/windowsIcons/327(16x16).png';
-import notepadLarge from 'assets/windowsIcons/327(32x32).png';
-import winamp from 'assets/windowsIcons/winamp.png';
-import paintLarge from 'assets/windowsIcons/680(32x32).png';
-import paint from 'assets/windowsIcons/680(16x16).png';
+import InternetExplorer from "./InternetExplorer";
+import Minesweeper from "./Minesweeper";
+import ErrorBox from "./ErrorBox";
+import MyComputer from "./MyComputer";
+import Notepad from "./Notepad";
+import Winamp from "./Winamp";
+import Paint from "./Paint";
+import iePaper from "assets/windowsIcons/ie-paper.png";
+import ie from "assets/windowsIcons/ie.png";
+import mine from "assets/minesweeper/mine-icon.png";
+import error from "assets/windowsIcons/897(16x16).png";
+import computer from "assets/windowsIcons/676(16x16).png";
+import computerLarge from "assets/windowsIcons/676(32x32).png";
+import notepad from "assets/windowsIcons/327(16x16).png";
+import notepadLarge from "assets/windowsIcons/327(32x32).png";
+import winamp from "assets/windowsIcons/winamp.png";
+import paintLarge from "assets/windowsIcons/680(32x32).png";
+import paint from "assets/windowsIcons/680(16x16).png";
 
 const gen = () => {
   let id = -1;
@@ -30,7 +30,7 @@ export const defaultAppState = [
   {
     component: InternetExplorer,
     header: {
-      title: 'Internet Explorer',
+      title: "Internet Explorer",
       icon: iePaper,
     },
     defaultSize: {
@@ -50,7 +50,7 @@ export const defaultAppState = [
   {
     component: Minesweeper,
     header: {
-      title: 'Minesweeper',
+      title: "Minesweeper",
       icon: mine,
     },
     defaultSize: {
@@ -70,7 +70,7 @@ export const defaultAppState = [
   {
     component: Winamp,
     header: {
-      title: 'Winamp',
+      title: "Winamp",
       icon: winamp,
       invisible: true,
     },
@@ -91,7 +91,7 @@ export const defaultAppState = [
   {
     component: MyComputer,
     header: {
-      title: 'My Computer',
+      title: "My Computer",
       icon: computer,
     },
     defaultSize: {
@@ -114,52 +114,52 @@ export const defaultIconState = [
   {
     id: 0,
     icon: ie,
-    title: 'Internet Explorer',
+    title: "Internet Explorer",
     component: InternetExplorer,
     isFocus: false,
   },
   {
     id: 1,
     icon: mine,
-    title: 'Minesweeper',
+    title: "Minesweeper",
     component: Minesweeper,
     isFocus: false,
   },
   {
     id: 2,
     icon: computerLarge,
-    title: 'My Computer',
+    title: "My Computer",
     component: MyComputer,
     isFocus: false,
   },
   {
     id: 3,
     icon: notepadLarge,
-    title: 'Notepad',
+    title: "Notepad",
     component: Notepad,
     isFocus: false,
   },
   {
     id: 4,
     icon: winamp,
-    title: 'Winamp',
+    title: "Winamp",
     component: Winamp,
     isFocus: false,
   },
   {
     id: 5,
     icon: paintLarge,
-    title: 'Paint',
+    title: "Paint",
     component: Paint,
     isFocus: false,
   },
 ];
 
 export const appSettings = {
-  'Internet Explorer': {
+  "Internet Explorer": {
     header: {
       icon: iePaper,
-      title: 'InternetExplorer',
+      title: "InternetExplorer",
     },
     component: InternetExplorer,
     defaultSize: {
@@ -178,7 +178,7 @@ export const appSettings = {
   Minesweeper: {
     header: {
       icon: mine,
-      title: 'Minesweeper',
+      title: "Minesweeper",
     },
     component: Minesweeper,
     defaultSize: {
@@ -197,8 +197,8 @@ export const appSettings = {
   Error: {
     header: {
       icon: error,
-      title: 'C:\\',
-      buttons: ['close'],
+      title: "C:\\",
+      buttons: ["close"],
       noFooterWindow: true,
     },
     component: ErrorBox,
@@ -215,10 +215,10 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
-  'My Computer': {
+  "My Computer": {
     header: {
       icon: computer,
-      title: 'My Computer',
+      title: "My Computer",
     },
     component: MyComputer,
     defaultSize: {
@@ -237,7 +237,7 @@ export const appSettings = {
   Notepad: {
     header: {
       icon: notepad,
-      title: 'Untitled - Notepad',
+      title: "Untitled - Notepad",
     },
     component: Notepad,
     defaultSize: {
@@ -256,7 +256,7 @@ export const appSettings = {
   Winamp: {
     header: {
       icon: winamp,
-      title: 'Winamp',
+      title: "Winamp",
       invisible: true,
     },
     component: Winamp,
@@ -276,7 +276,7 @@ export const appSettings = {
   Paint: {
     header: {
       icon: paint,
-      title: 'Untitled - Paint',
+      title: "Untitled - Paint",
     },
     component: Paint,
     defaultSize: {
