@@ -81,4 +81,4 @@ const Help = [
 
 const dropDownData = { Game, Help };
 
-export default { Game, Help };
+export default dropDownData;
